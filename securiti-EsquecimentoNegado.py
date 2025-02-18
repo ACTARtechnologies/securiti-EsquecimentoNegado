@@ -203,7 +203,7 @@ def update_subtask() -> Tuple[bool, str]:
                 "entry_id": 2,
                 "entry_type": "question",
                 "entry_title": "Declined",
-                "entry_value": '{"reason":"Mensagem a ser definida","notes":""}',
+                "entry_value": '{"reason":"Esquecimento Rejeitado CDC","notes":""}',
             }
         ],
     }
@@ -487,7 +487,7 @@ def main(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             "statusCode": 200,
             "body": json.dumps(
                 {
-                    "message": "All subtasks processed with notifications sent for failures.",
+                    "message": "All subtasks processed successfully.",
                     "dsr_id": data_dsr["ticketId"],
                 }
             ),
